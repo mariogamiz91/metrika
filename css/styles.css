@@ -41,7 +41,21 @@ h1{
     .color-primario{
         color: var(--primario);
     }
+    .w-100{
+        width: 100%;
+    }
+    .alinear-derecha{
+        justify-content: flex-end;
+    }
 
+    .flex{
+        display: flex;
+    }
+    @media (min-width:  768px){
+         .w-100{
+           width: auto;  
+         }
+    }
 
 
 .navegacion{
@@ -69,8 +83,17 @@ h1{
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
     }
-    
+    .boton2{
+        background-color: var(--blanco);
+        color: var(--primario);
+ 
+     }
+ 
+    .boton:hover{
+        cursor: pointer;
+    }
     @media (min-width:  768px){
          .boton{
              width:auto;
@@ -260,3 +283,53 @@ h1{
     }
   }
 
+
+
+/**Estilos del formulario**/
+.formulario{
+    background-color: var(--primario);
+    width: min(60rem, 100%); /**Utiliza el valor mas pequeno**/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+  .formulario fieldset{
+      border: none;
+  }
+
+  .formulario legend{
+      color: var(--blanco);
+      text-align: center;
+      font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;     
+    }
+
+
+    .contenedor-campos{
+
+    }
+
+    .campo{
+        margin-bottom: 1rem;
+    }
+
+    .campo label{
+        color: var(--blanco);
+        font-weight: bold;
+        margin-bottom: .5rem;
+        display: block;
+
+    }
+
+    .input-text{
+        width: 100%;
+        border: none;
+        padding: 1.5rem;
+        border-radius: .5rem;
+    }
+
+     
+   
